@@ -1,0 +1,12 @@
+@font-face {
+    font-family: montserrat-regular;
+    src: local("assets/fonts/montserrat/montserrat-regular.ttf");
+}
+@font-face {
+    font-family: montserrat-bold;
+    src: local('assets/fonts/montserrat/montserrat-bold.ttf');
+}
+@font-face {
+    font-family: futura-extra-bold;
+    src: local('assets/fonts/futura/futura-extra-bold.otf');
+}

@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-blue:#003595;
+    --main-white:#ffffff;
+    --main-red:#E1261C;
+    --main-yellow:#FFCE00;
+}
