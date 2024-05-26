@@ -1,12 +1,12 @@
 @font-face {
     font-family: montserrat-regular;
-    src: local("assets/fonts/montserrat/montserrat-regular.ttf");
+    src: url('../assets/fonts/montserrat/montserrat-regular.ttf') format('truetype');
 }
 @font-face {
     font-family: montserrat-bold;
-    src: local('assets/fonts/montserrat/montserrat-bold.ttf');
+    src: url('../assets/fonts/montserrat/montserrat-bold.ttf') format('truetype');
 }
 @font-face {
     font-family: futura-extra-bold;
-    src: local('assets/fonts/futura/futura-extra-bold.otf');
+    src: url('../assets/fonts/futura/futura-extra-bold.otf') format('opentype');
 }

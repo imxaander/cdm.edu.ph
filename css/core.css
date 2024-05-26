@@ -1,0 +1,90 @@
+@import "css/font.css";
+
+header{
+    position: absolute;
+    height: 20vh;
+    width: auto;
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 25%;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.logo-image{
+    width: 25%;
+    height: auto;
+}
+.header-logo h1{
+    font-family: montserrat-bold;
+    color: var(--main-white);
+    font-size: 3em;
+    line-height: 0.8;
+}
+.header-logo h5{
+    font-family: futura-extra-bold;
+    color: var(--main-yellow);
+    font-size: .5em;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-buttons a{
+    margin-left: 10px;
+    text-decoration: underline;
+    color: var(--main-white);
+    font-family: montserrat-bold;
+    font-size: 1.1em;
+}
+
+.hero{
+    background-image: url("../assets/images/cdm-image.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+    height: 100vh;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10vw ;
+}
+
+.hero p{
+    padding-top: 50px;
+    width: 50%;
+    text-align: left;
+    font-family: montserrat-bold;
+    font-size: 3em;
+    color: white;
+}
+
+.hero p mark{
+    color: var(--main-yellow);
+    background-color: transparent;
+}
