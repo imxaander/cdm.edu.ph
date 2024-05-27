@@ -1,6 +1,11 @@
 <nav id="nav-container" class="hero-nav">
     <div id="navbar-logo">
-        <img src="../assets/images/cdm-logo.png" alt="Cdm logo" id="navbar-logo-img">
+
+        <!--   this logo can be everywhere, it will check other file location if the location gives error     -->
+        <!--   this is an ugly fix :D need help     -->
+        <img id="navbar-logo-img"
+             src="./assets/images/cdm-logo.png"
+             onerror="this.onerror=null; this.src='../assets/images/cdm-logo.png'" alt="CDM Logo">
         <div id="navbar-logo-text">
             <p>CDM</p>
             <p>INSTITUTE OF HIGHER EDUCATION</p>
