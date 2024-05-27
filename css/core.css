@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* style for the colored line */
+.colored-line{
+    height: 10px;
+    border: 0;
+    background: linear-gradient(
+            to right,
+            rgba(255, 206, 0, 1) 0%,
+            rgba(255, 206, 0, 1) 50%,
+            rgba(255, 49, 49, 1) 50%,
+            rgba(255, 49, 49, 1) 80%,
+            rgba(0, 53, 149, 1) 80%,
+            rgba(0, 53, 149, 1) 100%);
+}
+
+/* sizes */
+/* image sizes*/
+.img-small{
+    width: 50px;
+    height: 50px;
+}
+/* footer icons sizes */
+.footer-icons{
+    font-size: 30px;
+    margin: 10px;
+}
+
+
+/* about */
+#about-header{
+    text-align: center;
+}
+#about-main{
+    display: flex;
+    justify-content: center;
+}
+#about-main article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-width: 70vh;
+    max-width: 90vh;
+}
+#about-main article section{
+    margin: 50px;
+}
+#about-main article section h2{
+    text-align: center;
+}
+
+
+
+/* footer */
+#footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+
+/* left footer item */
+#footer-item-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-item-left div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* center footer item */
+#footer-item-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#footer-item-center section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+
+/* right footer item */
+#footer-item-right{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
