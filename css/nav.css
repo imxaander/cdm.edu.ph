@@ -4,16 +4,16 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 30px 50px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     border-bottom: 5px solid;
     border-image: linear-gradient(to right, 
-    #ffce02 0%, #ffce02 50%, 
-    #024acf 50%, #024acf 80%, 
-    #e2251e 80%, #e2251e 100%);
+    var(--main-yellow) 0%, var(--main-yellow) 50%,
+    var(--main-blue) 50%, var(--main-blue) 80%,
+    var(--main-red) 80%, var(--main-red) 100%);
     border-image-slice: 1;
 }
-
 
 #navbar-logo { 
     display: flex;
@@ -58,20 +58,24 @@ nav {
 
 .navbar-link a {
     color: white;
-    text-decoration: none;
+    text-decoration-line: underline;
     font-family: montserrat-regular;
     font-size: 15px;
 }
 
 .active a, .navbar-link a:hover{
-    color: #ffce02;
+    color: var(--main-yellow);
 }
-
-
+.dropbtn p{
+    text-decoration-line: underline;
+}
+.dropbtn p:hover{
+    color:var(--main-yellow);
+}
 /* dropdown */
 
   .dropdown .dropbtn {
-    color: white;
+    color: var(--main-white);
     font-family: montserrat-regular;
     font-size: 15px;
     border: none;
@@ -79,8 +83,7 @@ nav {
     background-color: inherit;
     margin: 0; 
   }
-  
-  
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -107,3 +110,12 @@ nav {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+
+/*makes the nav bar transparent on hero section*/
+nav.hero-nav{
+    background-color: transparent;
+    border-bottom: none;
+    border-image: none;
+}
