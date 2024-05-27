@@ -2,9 +2,18 @@
 nav {
     background-color: #003595;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px 50px;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, 
+    #ffce02 0%, #ffce02 50%, 
+    #024acf 50%, #024acf 80%, 
+    #e2251e 80%, #e2251e 100%);
+    border-image-slice: 1;
 }
+
 
 #navbar-logo { 
     display: flex;
@@ -38,8 +47,6 @@ nav {
 }
 
 
-
-
 #navbar-links {
     list-style-type: none;
     display: flex;
@@ -60,13 +67,6 @@ nav {
     color: #ffce02;
 }
 
-#line {
-    height: 5px;
-    background: linear-gradient(to right, 
-    #ffce02 0%, #ffce02 50%, 
-    #024acf 50%, #024acf 80%, 
-    #e2251e 80%, #e2251e 100%);;
-}
 
 /* dropdown */
 
