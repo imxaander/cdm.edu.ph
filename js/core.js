@@ -43,29 +43,34 @@ function includeHTML() {
             return;
         }
     }
+    fixHref()
 }
-window.onload = function() {
-    var myDiv = document.getElementById('intro');
-    var delay = 5000; // 5 seconds
 
-    setTimeout(function() {
-        myDiv.style.display = 'none';
-        document.body.style.overflow = 'visible'
-    }, delay);
-};
+/*
+    href fix
+*/
+function fixHref(){
+    // checking if in root using pathname
+    let isRoot =
+        location.pathname === "/cdm.edu.ph" ||
+        location.pathname === "/cdm.edu.ph/" ||
+        location.pathname === "/cdm.edu.ph/index"
+    ;
 
-/* Changes the visibility of nav-bar background and border depending on the scroll value*/
-function navBackground(){
-    var navBar = document.getElementById('nav-container');
-    var scrollY = window.scrollY;
+    if(!isRoot){
+        // add one dot to every href attribute :D
+        let navContainer, tags, el, i;
+        navContainer = document.getElementById("nav-container");
 
-    if(scrollY > navBar.getAttribute('height')){
-        navBar.classList.remove('hero-nav');
+        tags = navContainer.getElementsByTagName("*");
+        for(i = 0; i < tags.length; i++){
+            el = tags[i];
+            let hrefValue = el.getAttribute("href");
+
+            if(hrefValue != null){
+                el.href = "." + hrefValue;
+            }
+        }
+        console.log(tags);
     }
-    else{
-        navBar.classList.add(('hero-nav'));
-    }
-
-    console.log(scrollY);
 }
-window.addEventListener('scroll', navBackground);

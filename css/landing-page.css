@@ -1,0 +1,25 @@
+
+
+/*
+    i placed it here to it will just become an override for landing page
+    if nav.css is required for other pages, this might cause problems
+    use this file when necessary :D
+*/
+
+/*
+    position fixed only when landing page so it's not destroying
+    other pages.
+*/
+nav{
+    position: fixed; !important;
+    top: 0; !important;
+}
+/*makes the nav bar transparent on hero section*/
+nav.hero-nav{
+    background-color: transparent;
+    border-bottom: none;
+    border-image: none;
+}
+body{
+    overflow: hidden;
+}
