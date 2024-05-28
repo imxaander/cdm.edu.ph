@@ -44,3 +44,5 @@ function includeHTML() {
         }
     }
 }
+
+console.log(location.pathname);
