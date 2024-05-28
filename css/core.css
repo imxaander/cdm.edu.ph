@@ -1,7 +1,5 @@
 
-body{
-    overflow: hidden;
-}
+
 
 /* sizes */
 /* image sizes*/
@@ -99,8 +97,6 @@ body{
 #about-main article section h2{
     text-align: center;
 }
-
-
 
 /* footer */
 #footer{

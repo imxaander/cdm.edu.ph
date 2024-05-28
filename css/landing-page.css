@@ -20,3 +20,6 @@ nav.hero-nav{
     border-bottom: none;
     border-image: none;
 }
+body{
+    overflow: hidden;
+}
