@@ -1,17 +1,18 @@
-
 nav {
     background-color: #003595;
     display: flex;
     justify-content: space-around;
     padding: 30px 50px;
-    position: fixed;
     width: 100%;
-    top: 0;
     border-bottom: 5px solid;
-    border-image: linear-gradient(to right, 
-    var(--main-yellow) 0%, var(--main-yellow) 50%,
-    var(--main-blue) 50%, var(--main-blue) 80%,
-    var(--main-red) 80%, var(--main-red) 100%);
+    border-image: linear-gradient(
+        to right,
+        var(--main-yellow) 0%,
+        var(--main-yellow) 50%,
+        var(--main-blue) 50%,
+        var(--main-blue) 80%,
+        var(--main-red) 80%,
+        var(--main-red) 100%);
     border-image-slice: 1;
 }
 
@@ -74,17 +75,17 @@ nav {
 }
 /* dropdown */
 
-  .dropdown .dropbtn {
+.dropdown .dropbtn {
     color: var(--main-white);
     font-family: montserrat-regular;
     font-size: 15px;
     border: none;
     outline: none;
     background-color: inherit;
-    margin: 0; 
-  }
+    margin: 0;
+}
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #003595;
@@ -92,30 +93,22 @@ nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     float: none;
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    color: #ffce02;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
-
-/*makes the nav bar transparent on hero section*/
-nav.hero-nav{
-    background-color: transparent;
-    border-bottom: none;
-    border-image: none;
 }
+
+.dropdown-content a:hover {
+    color: #ffce02;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
