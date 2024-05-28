@@ -43,6 +43,34 @@ function includeHTML() {
             return;
         }
     }
+    fixHref()
 }
 
-console.log(location.pathname);
+/*
+    href fix
+*/
+function fixHref(){
+    // checking if in root using pathname
+    let isRoot =
+        location.pathname === "/cdm.edu.ph" ||
+        location.pathname === "/cdm.edu.ph/" ||
+        location.pathname === "/cdm.edu.ph/index"
+    ;
+
+    if(!isRoot){
+        // add one dot to every href attribute :D
+        let navContainer, tags, el, i;
+        navContainer = document.getElementById("nav-container");
+
+        tags = navContainer.getElementsByTagName("*");
+        for(i = 0; i < tags.length; i++){
+            el = tags[i];
+            let hrefValue = el.getAttribute("href");
+
+            if(hrefValue != null){
+                el.href = "." + hrefValue;
+            }
+        }
+        console.log(tags);
+    }
+}
