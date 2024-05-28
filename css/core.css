@@ -1,8 +1,33 @@
-@import "css/font.css";
 
 body{
     overflow: hidden;
 }
+
+/* sizes */
+/* image sizes*/
+.img-small{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* style for the colored line */
+/* apparently i cant use variables with rgba :/ */
+/* this might be a problem in the future :D */
+.colored-line{
+    height: 10px;
+    border: 0;
+    background: linear-gradient(
+            to right,
+            var(--main-yellow) 0%,
+            var(--main-yellow) 50%,
+            var(--main-blue) 50%,
+            var(--main-blue) 80%,
+            var(--main-red) 80%,
+            var(--main-red) 100%);
+}
+
+/* hero */
 .hero{
     background-image: url("../assets/images/cdm-image.png");
     background-repeat: no-repeat;
@@ -51,3 +76,94 @@ body{
     width: auto;
     background-color: var(--main-white);
 }
+
+/* about */
+#about-header{
+    text-align: center;
+}
+#about-main{
+    display: flex;
+    justify-content: center;
+}
+#about-main article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    min-width: 70vh;
+    max-width: 90vh;
+}
+#about-main article section{
+    margin: 50px;
+}
+#about-main article section h2{
+    text-align: center;
+}
+
+
+
+/* footer */
+#footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+/* footer icons sizes */
+.footer-icons{
+    font-size: 30px;
+    margin: 10px;
+    color: var(--main-blue);
+}
+/* left footer item */
+#footer-item-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer-item-left div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* center footer item */
+#footer-item-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#footer-item-center section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+
+/* right footer item */
+#footer-item-right{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+
+/* sizes */
+/* image sizes*/
+.img-small{
+    width: 50px;
+    height: 50px;
+}
+/* footer icons sizes */
+.footer-icons{
+    font-size: 30px;
+    margin: 10px;
+}
+
