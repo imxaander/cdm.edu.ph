@@ -14,6 +14,11 @@ nav {
         var(--main-red) 80%,
         var(--main-red) 100%);
     border-image-slice: 1;
+    z-index: 100;
+}
+
+a, a:visited{
+    color: transparent;
 }
 
 #navbar-logo { 
