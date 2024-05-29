@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/landing-page.css">
 
     <script src="js/core.js"></script>
-    <script src="js/landing-page.js"></script>
 
     <title>Colegio de Muntinlupa</title>
 </head>
@@ -26,13 +25,30 @@
         <p>THE HOME OF FUTURE <mark>ENGINEERS</mark> AND <mark>ARCHITECTS</mark></p>
     </section>
     <section class="programs">
-        JUST LIKE THE CDM SITE BUT EACH CARD WOULD LEAD TO THEIR OWN PAGE??? JUST LIKE PLMUN'S
-        <div class="CpE"></div>
-        <div class="CpE"></div>
-        <div class="CpE"></div>
-        <div class="CpE"></div>
+        <h1>AVAILABLE COURSES</h1>
+        <div class="program-cards">
+            <div class="left-arrow" id="left-arrow">
+                <i class='bx bx-chevron-left'></i>
+            </div>
+            <!-- I cant make the normal card movements, so it's a fade in and fade out card hehe -->
+            <div class="card" id="card">
+                <div class="card-left">
+                    <h1>COMPUTER ENGINEERING</h1>
+                    <!-- placeholder image will add final images on finalized version of this section-->
+                    <img src="https://th.bing.com/th/id/OIP.pZ1qYJ-scyXUeb5qOj3fJQHaE8?rs=1&pid=ImgDetMain">
+                </div>
+                <div class="card-right">
+                    <p>Lorem ipsum dolor sit amet, , volutpat vel libero. In hac habitasse platea dictumst. Phasellus vel tempus quam. Suspendisse eu lacinia nisi. Aenean ut risus ac ante dignissim bibendum. Suspendisse in elit ligula. Praesent tempor molestie ullamcorper. Duis dapibus at nulla id venenatis. Aliquam vel elementum ante. Suspendisse pharetra erat sit amet lacinia porta. Morbi viverra sem vitae enim pulvinar aliquam. Maecenas facilisis dolor orci, sit amet fermentum ligula bibendum et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur volutpat bibendum est ut laoreet.</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <div class="right-arrow" id="right-arrow">
+                <i class='bx bx-chevron-left bx-rotate-180' ></i>
+            </div>
+        </div>
     </section>
     <footer include-html="footer.html"></footer>
     <script> includeHTML();</script>
+    <script src="js/landing-page.js"></script>
 </body>
 </html>
