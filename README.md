@@ -1,4 +1,4 @@
-# CDM Website Project
+# CDM Website Project `(Paused)`
 **An UNOFFICIAL website for the school: [Colegio de Muntinlupa](https://cdm.edu.ph)**
 
 ---
@@ -12,3 +12,4 @@ I want everybody, including me to learn how to use git and github to collaborate
 
 ## Contribution
 Are you a CDM student/alumni? this repo is welcome and in need of your contributions! the contribution documentation is still in the plan, while we are working on the initial release of the website, the contribution docs is done by that date.
+
